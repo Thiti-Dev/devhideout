@@ -1,6 +1,3 @@
-Ongoing Progression
-[AFK 28 - 29]
-
 <p align="center">
   <b>: Contact me By :</b><br>
   <a href="https://www.facebook.com/thiti.developer">Facebook</a> |
