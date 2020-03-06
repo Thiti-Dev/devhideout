@@ -35,4 +35,8 @@ const ReviewSchema = new mongoose.Schema({
 	}
 });
 
+// Prevent user from submitting more than one review per bootcamp
+// If this is not working after applied => try db.dropDatabase() in the mongoDB to do the trick
+ReviewSchema.index({ bootcamp: 1, user: 1 }, { unique: true });
+
 module.exports = mongoose.model('Review', ReviewSchema);
