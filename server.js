@@ -21,6 +21,7 @@ const bootcamps = require('./routes/api/bootcamps');
 const courses = require('./routes/api/courses');
 const auth = require('./routes/api/auth');
 const users = require('./routes/api/user');
+const reviews = require('./routes/api/reviews');
 
 const app = express();
 
@@ -49,6 +50,7 @@ app.use('/api/v1/bootcamps', bootcamps);
 app.use('/api/v1/courses', courses);
 app.use('/api/v1/auth', auth);
 app.use('/api/v1/users', users);
+app.use('/api/v1/reviews', reviews);
 
 // Use custom error handler
 app.use(errorHandler);
